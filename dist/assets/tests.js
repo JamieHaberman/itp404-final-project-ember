@@ -64,7 +64,7 @@ define('crudmovies/tests/app.jshint', ['exports'], function (exports) {
   QUnit.module('JSHint | app.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'app.js should pass jshint.');
+    assert.ok(false, 'app.js should pass jshint.\napp.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\napp.js: line 2, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\napp.js: line 3, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\napp.js: line 4, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\napp.js: line 6, col 1, \'let\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\napp.js: line 13, col 3, \'object short notation\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\napp.js: line 18, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n7 errors');
   });
 });
 define('crudmovies/tests/controllers/movielist.jshint', ['exports'], function (exports) {
@@ -73,7 +73,7 @@ define('crudmovies/tests/controllers/movielist.jshint', ['exports'], function (e
   QUnit.module('JSHint | controllers/movielist.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'controllers/movielist.js should pass jshint.');
+    assert.ok(false, 'controllers/movielist.js should pass jshint.\ncontrollers/movielist.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncontrollers/movielist.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/controllers/movies/movie.jshint', ['exports'], function (exports) {
@@ -82,7 +82,7 @@ define('crudmovies/tests/controllers/movies/movie.jshint', ['exports'], function
   QUnit.module('JSHint | controllers/movies/movie.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'controllers/movies/movie.js should pass jshint.');
+    assert.ok(false, 'controllers/movies/movie.js should pass jshint.\ncontrollers/movies/movie.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncontrollers/movies/movie.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/controllers/results/favorites.jshint', ['exports'], function (exports) {
@@ -91,7 +91,7 @@ define('crudmovies/tests/controllers/results/favorites.jshint', ['exports'], fun
   QUnit.module('JSHint | controllers/results/favorites.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'controllers/results/favorites.js should pass jshint.');
+    assert.ok(false, 'controllers/results/favorites.js should pass jshint.\ncontrollers/results/favorites.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncontrollers/results/favorites.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/controllers/search.jshint', ['exports'], function (exports) {
@@ -100,7 +100,7 @@ define('crudmovies/tests/controllers/search.jshint', ['exports'], function (expo
   QUnit.module('JSHint | controllers/search.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'controllers/search.js should pass jshint.');
+    assert.ok(false, 'controllers/search.js should pass jshint.\ncontrollers/search.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncontrollers/search.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/controllers/search/results.jshint', ['exports'], function (exports) {
@@ -109,7 +109,7 @@ define('crudmovies/tests/controllers/search/results.jshint', ['exports'], functi
   QUnit.module('JSHint | controllers/search/results.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'controllers/search/results.js should pass jshint.');
+    assert.ok(false, 'controllers/search/results.js should pass jshint.\ncontrollers/search/results.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncontrollers/search/results.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/helpers/destroy-app', ['exports', 'ember'], function (exports, _ember) {
@@ -216,7 +216,7 @@ define('crudmovies/tests/resolver.jshint', ['exports'], function (exports) {
   QUnit.module('JSHint | resolver.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'resolver.js should pass jshint.');
+    assert.ok(false, 'resolver.js should pass jshint.\nresolver.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nresolver.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/router.jshint', ['exports'], function (exports) {
@@ -225,7 +225,7 @@ define('crudmovies/tests/router.jshint', ['exports'], function (exports) {
   QUnit.module('JSHint | router.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'router.js should pass jshint.');
+    assert.ok(false, 'router.js should pass jshint.\nrouter.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nrouter.js: line 2, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nrouter.js: line 4, col 1, \'const\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nrouter.js: line 23, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n4 errors');
   });
 });
 define('crudmovies/tests/routes/favoritez.jshint', ['exports'], function (exports) {
@@ -234,7 +234,7 @@ define('crudmovies/tests/routes/favoritez.jshint', ['exports'], function (export
   QUnit.module('JSHint | routes/favoritez.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/favoritez.js should pass jshint.');
+    assert.ok(false, 'routes/favoritez.js should pass jshint.\nroutes/favoritez.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/favoritez.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\nroutes/favoritez.js: line 4, col 3, \'concise methods\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\n\n3 errors');
   });
 });
 define('crudmovies/tests/routes/index.jshint', ['exports'], function (exports) {
@@ -243,7 +243,7 @@ define('crudmovies/tests/routes/index.jshint', ['exports'], function (exports) {
   QUnit.module('JSHint | routes/index.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/index.js should pass jshint.');
+    assert.ok(false, 'routes/index.js should pass jshint.\nroutes/index.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/index.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/routes/movielist.jshint', ['exports'], function (exports) {
@@ -252,7 +252,7 @@ define('crudmovies/tests/routes/movielist.jshint', ['exports'], function (export
   QUnit.module('JSHint | routes/movielist.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/movielist.js should pass jshint.');
+    assert.ok(false, 'routes/movielist.js should pass jshint.\nroutes/movielist.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/movielist.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/routes/movies.jshint', ['exports'], function (exports) {
@@ -261,7 +261,7 @@ define('crudmovies/tests/routes/movies.jshint', ['exports'], function (exports) 
   QUnit.module('JSHint | routes/movies.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/movies.js should pass jshint.');
+    assert.ok(false, 'routes/movies.js should pass jshint.\nroutes/movies.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/movies.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/routes/movies/movie.jshint', ['exports'], function (exports) {
@@ -270,7 +270,7 @@ define('crudmovies/tests/routes/movies/movie.jshint', ['exports'], function (exp
   QUnit.module('JSHint | routes/movies/movie.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/movies/movie.js should pass jshint.');
+    assert.ok(false, 'routes/movies/movie.js should pass jshint.\nroutes/movies/movie.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/movies/movie.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/routes/results/favorites.jshint', ['exports'], function (exports) {
@@ -279,7 +279,7 @@ define('crudmovies/tests/routes/results/favorites.jshint', ['exports'], function
   QUnit.module('JSHint | routes/results/favorites.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/results/favorites.js should pass jshint.');
+    assert.ok(false, 'routes/results/favorites.js should pass jshint.\nroutes/results/favorites.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/results/favorites.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/routes/search.jshint', ['exports'], function (exports) {
@@ -288,7 +288,7 @@ define('crudmovies/tests/routes/search.jshint', ['exports'], function (exports) 
   QUnit.module('JSHint | routes/search.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/search.js should pass jshint.');
+    assert.ok(false, 'routes/search.js should pass jshint.\nroutes/search.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/search.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/routes/search/results.jshint', ['exports'], function (exports) {
@@ -297,7 +297,7 @@ define('crudmovies/tests/routes/search/results.jshint', ['exports'], function (e
   QUnit.module('JSHint | routes/search/results.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/search/results.js should pass jshint.');
+    assert.ok(false, 'routes/search/results.js should pass jshint.\nroutes/search/results.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/search/results.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('crudmovies/tests/test-helper', ['exports', 'crudmovies/tests/helpers/resolver', 'ember-qunit'], function (exports, _crudmoviesTestsHelpersResolver, _emberQunit) {

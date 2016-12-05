@@ -22,6 +22,14 @@ define('crudmovies/app', ['exports', 'ember', 'crudmovies/resolver', 'ember-load
 
   exports['default'] = App;
 });
+define('crudmovies/blueprints/surge', ['exports', 'ember-cli-surge/blueprints/surge'], function (exports, _emberCliSurgeBlueprintsSurge) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberCliSurgeBlueprintsSurge['default'];
+    }
+  });
+});
 define('crudmovies/components/app-version', ['exports', 'ember-cli-app-version/components/app-version', 'crudmovies/config/environment'], function (exports, _emberCliAppVersionComponentsAppVersion, _crudmoviesConfigEnvironment) {
 
   var name = _crudmoviesConfigEnvironment['default'].APP.name;
@@ -54,74 +62,6 @@ define('crudmovies/controllers/search', ['exports', 'ember'], function (exports,
     }
 
   });
-
-  //in backend make a url to post movielists to
-  //SAVE THIS TO USE WITH MOVIELIST!!!
-  //GET THE MOVIELIST TITLES IN THE BACKEND TO CREATE A URL!!
-  //THEN "TITLE" WILL BE UPDATED BY WHATEVERS CLICKED
-  //this.get('') use to grab the button thats clicked
-
-  //   createmovie: function(e){
-  //     e.preventDefault();
-  //     var title= this.get('title');
-  //     console.log(title)
-  //
-  //   var promise =  $.ajax({
-  //       type:'get',
-  //       url: 'http://localhost:3000/api/movies',
-  //       data:{
-  //         title: this.get('title')
-  //       }
-  //     });
-  //     promise.then(function(){
-  //       alert('yay');
-  //       this.set('title', null);
-  //       this.get('store').findAll('title');
-  //     }, function(){
-  //       alert('error');
-  //     });
-  //   }
-  // }
-
-  //
-  // actions:{
-  //   createMovie: function(e)
-  // }
-
-  //   actions:{
-  //     search(moviesearch){
-  //   var query = this.get('moviesearch');
-  //   this.set('searchQuery', query);
-  //   this.transitionToRoute('search', query);
-  // }
-  //     console.log(moviesearch);
-  //
-  //   var searchedmovie = this.get('moviesearch');
-  //   console.log(searchedmovie);
-  //   var url= 'http://localhost:3000/api/movies';
-  // console.log(url);
-  //  var data={};
-  //   // data={};
-  //   // $.ajax({
-  //   //   type:'get',
-  //   //   url: 'https://api.themoviedb.org/3/search/movie?api_key=017ba55a17b73509e379bc015be7c5f9&query=' + movie
-  //   //
-  //   // });
-  //   var controller = this;
-  //      var promise = $.ajax({
-  //        url: url,
-  //        type: "POST",
-  //        data: data,
-  //        success: function(data) {
-  //          console.log(data);
-  //          controller.set('response', data);
-  //        },
-  //        dataType: 'json'
-  //      });
-  //
-  //   }
-  //
-  //   }
 });
 define('crudmovies/controllers/search/results', ['exports', 'ember'], function (exports, _ember) {
   exports['default'] = _ember['default'].Controller.extend({
@@ -139,7 +79,7 @@ define('crudmovies/controllers/search/results', ['exports', 'ember'], function (
           type: 'POST',
 
           //post API endpoint to post movies to db
-          url: 'http://localhost:3000/api/movies',
+          url: 'https://moviemood.herokuapp.com/api/movies',
           data: {
             movielist: this.get('movielist')
           },
@@ -360,7 +300,7 @@ define('crudmovies/routes/favoritez', ['exports', 'ember'], function (exports, _
   exports['default'] = _ember['default'].Route.extend({
     model: function model() {
       //get api endpoint to get all movie data
-      return _ember['default'].$.getJSON('http://localhost:3000/api/movies');
+      return _ember['default'].$.getJSON('https://moviemood.herokuapp.com/api/movies');
     }
   });
 });
@@ -409,25 +349,8 @@ define('crudmovies/routes/movies/movie', ['exports', 'ember'], function (exports
 define('crudmovies/routes/results/favorites', ['exports', 'ember'], function (exports, _ember) {
   exports['default'] = _ember['default'].Route.extend({
 
-    ///RENDER THE movielist!!!
-
-    //
-    // model: function(){
-    //   var url = 'http://localhost:3000/api/movies/api/add';
-    // }
-    // var promise = $.ajax({
-    //   type:'get',
-    //   url:url
-    // }).then(function(response){
-    //   return {
-    //     movielist: response.movielist
-    //   };
-    // });
-    // return promise;
-    // }
-
     model: function model() {
-      var url = 'http://localhost:3000/api/movies/';
+      var url = 'https://moviemood.herokuapp.com/api/movies/';
       //url created by me in node to find specific terms that are searched for
       // var url ='http://localhost:3000/api/movies/search/${params.term}';
       return _ember['default'].$.getJSON(url);
@@ -448,7 +371,7 @@ define('crudmovies/routes/search/results', ['exports', 'ember'], function (expor
 
       //get api endpoint to search by title
       //url created by me in node to find specific terms that are searched for
-      var url = 'http://localhost:3000/api/movies/search/' + params.term;
+      var url = 'https://moviemood.herokuapp.com/api/movies/search/' + params.term;
 
       return _ember['default'].$.getJSON(url);
     },
@@ -1191,7 +1114,7 @@ define("crudmovies/templates/movielist", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 12,
+            "line": 2,
             "column": 0
           }
         },
@@ -2357,7 +2280,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("crudmovies/app")["default"].create({"name":"crudmovies","version":"0.0.0+f9714d2a"});
+  require("crudmovies/app")["default"].create({"apiEndpoint":"http://localhost:3000","name":"crudmovies","version":"0.0.0+73b728ef"});
 }
 
 /* jshint ignore:end */

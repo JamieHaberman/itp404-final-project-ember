@@ -20,6 +20,7 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.APP.apiEndpoint = 'http://localhost:3000';
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -39,6 +40,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.APP.apiEndpoint = 'http://my-api.herokuapp.com';
 
   }
 

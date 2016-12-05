@@ -16,7 +16,7 @@ actions:{
         type:'POST',
 
         //post API endpoint to post movies to db
-        url: 'http://localhost:3000/api/movies',
+        url: 'https://moviemood.herokuapp.com/api/movies',
         data: {
           movielist: this.get('movielist')
         },
