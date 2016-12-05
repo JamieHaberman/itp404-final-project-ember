@@ -1,0 +1,1 @@
+/Users/jamiehaberman/itp404_assignments/crudmovies/tmp/broccoli_merge_trees-input_base_path-RktoxrRS.tmp/2/crudmovies/tests/helpers/destroy-app.jshint.js
